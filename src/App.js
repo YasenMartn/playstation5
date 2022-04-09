@@ -1,10 +1,13 @@
 import React from "react";
-import "./GlobalStyle.css"
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import "./styles/GlobalStyle.css"
 
 function App() {
   return (
     <div>
-      hey
+      <Navbar/>
+      <Home/>
      
     </div>
   );

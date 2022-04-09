@@ -1,0 +1,113 @@
+.navbar{
+    width: 100%;
+    height: 70px;
+    background: black;
+    color: white;
+    position: relative;
+    @include flexCenter();
+    .right{
+        flex: 1;
+        @include flexEnd();
+        padding-right: 20px;
+        a{
+            text-decoration: none;
+            color: white;
+            font-weight: 700;
+            margin-left: 30px;
+            &.active{
+                color: $blue;
+            }
+        }
+    }
+    .left{
+        flex: 1;
+        @include flexStart();
+        padding-left: 20px;
+        .logoContainer{
+            width: 50px;
+            img{
+                width: 100%;
+                cursor: pointer;
+            }
+        }
+    }
+    .mobileMenuIcon{
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        display: none;
+        .line{
+            width: 100%;
+            height: 5px;
+            position: relative;
+            transition: .5s ease-in-out all;
+            background-color: white;
+            &::after, &::before{
+                content: "";
+                position: absolute;
+                transition: .5s ease-in-out all;
+                width: 100%;
+                height: 100%;
+                background-color: white; 
+            }
+            &::after{
+                top: 15px;
+            }
+            &::before{
+                bottom: 15px;
+            }
+            &.active{
+                background-color: transparent;
+            }
+            &.active::before{
+                bottom: 0;
+                transform: rotate(45deg);
+            }
+            &.active::after{
+                top: 0;
+                transform: rotate(-45deg);
+            }
+        }
+    }
+    .mobileMenu{
+        width: 90%;
+        height: calc(100vh - 70px);
+        background: $blue;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        z-index: 222;
+        display: none;
+        transform: translate(100%);
+        flex-direction: column;
+        transition: .5s ease-in-out all;
+        &.active{
+            transform: translate(0);
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-weight: 700;
+            font-size: 3rem;
+            &.active{
+                color: black;
+            }
+        }
+    }
+}
+@media (max-width: 700px) {
+    .navbar{
+        .right{
+            display: none;
+        }
+        .mobileMenuIcon{
+            @include flexCenter();
+        }
+        .mobileMenu{
+            @include flexCenter();
+
+        }
+    }
+}
