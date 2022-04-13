@@ -4,6 +4,9 @@
     background: black;
     color: white;
     position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
     @include flexCenter();
     .right{
         flex: 1;
@@ -17,19 +20,17 @@
             &.active{
                 color: $blue;
             }
-        }
+        } 
     }
     .left{
         flex: 1;
         @include flexStart();
         padding-left: 20px;
-        .logoContainer{
-            width: 50px;
-            img{
-                width: 100%;
-                cursor: pointer;
-            }
+        .shoppingCartIcon{
+            color: white;
+            cursor: pointer;
         }
+       
     }
     .mobileMenuIcon{
         width: 40px;
@@ -71,14 +72,25 @@
             }
         }
     }
-    .mobileMenu{
+    .holder{
         width: 90%;
+        height: calc(100vh - 70px);
+        background: $red;
+        position: absolute;
+        overflow: hidden;
+        visibility: hidden;
+        top: 70px;
+        right: 0;
+    }
+    .mobileMenu{
+        width: 100%;
+        visibility: visible ;
         height: calc(100vh - 70px);
         background: $blue;
         position: absolute;
-        top: 70px;
+        top: 0;
         right: 0;
-        z-index: 222;
+        z-index: 22222;
         display: none;
         transform: translate(100%);
         flex-direction: column;

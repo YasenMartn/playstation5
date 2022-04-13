@@ -1,0 +1,19 @@
+.shopContainer{
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    background-color: black;
+    @include flexStart();
+    flex-direction: column;
+    .title{
+        color: white;
+        font-size: 4rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    .productsContainer{
+        width: 100%;
+        min-height: 50vh;
+        @include flexCenter();
+        flex-wrap: wrap;
+    }
+}

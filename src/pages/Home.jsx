@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -6,17 +7,18 @@ const Home = () => {
 
         <div className="left">
             <div className="infoContainer">
-                <h1>Squid Game </h1>
-                <h1> PS5 Dualshock 5</h1>
+                <h1 className='title'>DualSense Wireless</h1>
+                <h1 className='title'>PS5 Controller</h1>
                 <span className='info'>Wireless Controller For Playstation 5 </span>
-                <span className='price'>$19.99</span>
-                <button className='btn'>Buy Now</button>
-                <div className="line"></div>
+                <span className='price'>$79.99</span>
+                <button className='btn'>
+                  <Link to="/shop">Buy Now</Link>
+                </button>
             </div>
         </div>
 
         <div className="right">
-            <img src="/pictures/sg.png" alt="controller" />
+            <img src="/pictures/whiteps5.png" alt="controller" />
         </div>
 
     </div>

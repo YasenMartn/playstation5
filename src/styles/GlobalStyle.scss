@@ -1,6 +1,12 @@
 @import "./utilities";
 @import "./navbar";
 @import "./home";
+@import "./shop";
+@import "./product";
+@import "./loading";
+@import './productDetails';
+@import "./cart";
+@import "./cartProduct";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
@@ -18,37 +24,70 @@
 }
 /* Handle */
 ::-webkit-scrollbar-thumb{
-    background: #888; 
+    background: $blue; 
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover{
-    background: #555; 
+    background: $blue; 
 }
 
 .btn{
     padding: 10px 20px;
-    width: 110px;
+    height: 42px;
     border-radius: 5px;
     border: 1px solid $blue;
-    background: $blue;
-    color: black;
+    background: transparent;
+    color: white;
     font-weight: 700;
     text-transform: uppercase;
     cursor: pointer;
     transition: .5s ease-in-out all;
     &:hover{
-        background: transparent;
+        background: $blue ;
         color: white;
-    }
-}
-@media (max-width: 700px) {
-    .btn{
-        width: 100%;
+        filter: drop-shadow(0 0 0.75rem $blue);
     }
 }
 
-body, html{
-    overflow: hidden;
-    width: 100%;
-    height: 100vh;
+
+.quantity {
+    width: 130px;
+    height: 42px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    @include flexCenter();
+    transition: .5s ease-in-out all;
+    .qty {
+        font-size: 12px;
+        flex: 1;
+        height: 100%;
+        @include flexCenter();
+    }
+    .qtyBtns {
+        background: none;
+        color: white;
+        border: none;
+        height: 100%;
+        flex: 1;
+        cursor: pointer;
+        font-size: 20px;
+        transition: .5s ease-in-out all;
+        &:hover{
+            background: $blue;
+            color: white;
+        }
+    }
+    
+}
+
+
+@media (max-width: 1000px) {
+    .btn{
+        align-self: center;
+    }
 }

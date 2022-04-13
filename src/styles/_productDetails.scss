@@ -1,0 +1,123 @@
+.productDetailsContainer {
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    background-color: black;
+    display: flex;
+    .left {
+        width: 50%;
+        min-height: 100%;
+        @include flexCenter();
+        flex-direction: column;
+        padding: 50px 20px;
+        .imgContainer {
+            width: 80%;
+            height: 400px;
+            background-color: white;
+            margin-bottom: 50px;
+            border-radius: 15px;
+            @include flexCenter();
+            .picture {
+                width: 70%;
+                height: 70%;
+                object-fit: contain;
+            }
+        }
+        .imgsCWrapper {
+            width: 80%;
+            height: 100px;
+            gap: 1rem;
+            @include flexCenter();
+            justify-content: space-between;
+            .picContainer {
+                height: 100%;
+                width: 100px;
+                background-color: white;
+                border-radius: 10px;
+                @include flexCenter();
+                cursor: pointer;
+                .picture {
+                    width: 80%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+    .right {
+        width: 50%;
+        min-height: 100%;
+        @include flexCenter();
+        justify-content: flex-start;
+        padding: 50px;
+        align-items: flex-start;
+        flex-direction: column;
+        color: white;
+        .title {
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+        }
+        .desc {
+            margin-bottom: 20px;
+        }
+        .price {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .buttonsContainer {
+            @include flexCenter();
+            .btn {
+                margin-right: 20px;
+            }          
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .productDetailsContainer {
+        flex-direction: column;
+        .left {
+            width: 100%;
+            height: 50%;
+            padding: 20px;
+            padding-top: 20px;
+            .imgContainer {
+                width: 100%;
+                height: 300px;
+                margin-bottom: 30px;
+            }
+            .imgsCWrapper {
+                width: 100%;
+                height: 80px;
+                gap: 1rem;
+                .picContainer {
+                    flex: 1;
+                }
+            }
+        }
+        .right {
+            width: 100%;
+            height: 50%;
+            padding: 20px;
+            .title {
+                margin-bottom: 20px;
+                font-size: 2rem;
+            }
+            .price {
+                text-align: center;
+                width: 100%;
+            }
+            .buttonsContainer {
+                width: 100%;
+                flex-direction: column;
+                .quantity{
+                    width: 50%;
+                }
+                .btn{
+                    margin-right: 0;
+                    margin-bottom: 20px;
+                    outline: none;
+                }
+            }
+        }
+    }
+}
