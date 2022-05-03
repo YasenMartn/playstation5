@@ -36,6 +36,9 @@
             }
             .btn{
                 background: $blue;
+                text-decoration: none;
+                @include flexCenter();
+
                 a{
                     text-decoration: none;
                     color: white;

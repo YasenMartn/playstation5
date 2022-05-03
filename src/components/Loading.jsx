@@ -2,7 +2,7 @@ import React from 'react'
 
 const Loading = () => {
 
-  const COUNTER = 8;
+  const COUNTER = 6;
   const FeedSkeleton = () => (
       <div className='loadingContainer'>
           <div className='imageContainer'></div>

@@ -23,9 +23,16 @@
         align-items: flex-start;
         flex-direction: column;
         justify-content: space-around;
+        .name{
+            margin-bottom: 10px;
+        }
+        .desc{
+            margin-bottom: 10px;
+        }
         .price{
             font-weight: 700;
             font-size: 1.2rem;
+            margin-bottom: 10px;
         }
         .btnsContainer{
             @include flexCenter();
@@ -50,10 +57,11 @@
                 }
             }
             .removeBtn{
-                color: black;
-                border: 1px solid black;
+                color: white;
+                border: none;
+                background: $red;
                 &:hover{
-                    color: white;
+                    filter: drop-shadow(0 0 0.75rem $red);
                 }
             }
         }
@@ -69,6 +77,12 @@
        }
        .productInfoContainer{
            width: 100%;
+           .btnsContainer{
+               flex-direction: column;
+               .quantity{
+                   margin-bottom: 20px;
+               }
+           }
        }
    } 
 }

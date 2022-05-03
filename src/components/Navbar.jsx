@@ -26,8 +26,6 @@ const Navbar = () => {
                 <NavLink to="/shop">SHOP</NavLink>
                 <NavLink to="/about">ABOUT</NavLink>
                 <NavLink to="/news">NEWS</NavLink>
-                
-
             </div>
 
             <div className="mobileMenuIcon" onClick={() => setMenu(!menu)}>

@@ -11,9 +11,7 @@ const Home = () => {
                 <h1 className='title'>PS5 Controller</h1>
                 <span className='info'>Wireless Controller For Playstation 5 </span>
                 <span className='price'>$79.99</span>
-                <button className='btn'>
-                  <Link to="/shop">Buy Now</Link>
-                </button>
+                <Link to="/shop" className='btn'>Buy Now</Link>
             </div>
         </div>
 

@@ -64,6 +64,18 @@
             width: 100%;
             min-height: fit-content;
             padding-bottom: 20px;
+            .infoContainer{
+                align-items: center;
+                .btnsContainer{
+                    flex-direction: column;
+                    .btn1{
+                        margin-bottom: 20px;
+                    }
+                    .btn{
+                        width: 50%;
+                    }
+                }
+            }
         }
     }
 }

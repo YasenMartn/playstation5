@@ -15,8 +15,8 @@ const CartProduct = ({ product }) => {
             </div>
 
             <div className="productInfoContainer">
-                <h2>{name}</h2>
-                <span>{desc}</span>
+                <h2 className='name'>{name}</h2>
+                <span className='desc'>{desc}</span>
                 <span className='price'>${(price * quantity).toFixed(2)}</span>
                 <div className="btnsContainer">
                     <div className='quantity'>
