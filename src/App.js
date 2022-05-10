@@ -8,6 +8,8 @@ import Shop from "./pages/Shop";
 import ProductDetails from "./pages/ProductDetails";
 import ScrollToTop from "./components/ScrollToTop";
 import {Toaster} from "react-hot-toast"
+import News from "./pages/News";
+import About from "./pages/About";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           <Route exact path="/shop" element={<Shop/>} />
           <Route exact path="/products/:id" element={<ProductDetails/>} />
           <Route exact path="/cart" element={<Cart/>} />
+          <Route exact path="/about" element={<About/>} />
+          <Route exact path="/news" element={<News/>} />
         </Routes>
       </ScrollToTop>
      

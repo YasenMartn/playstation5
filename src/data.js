@@ -39,28 +39,50 @@ export const data = [
         price: 74.99,
         desc: "Energize your PS5 gaming expeditions with the DualSense Nova Pink wireless controller."
     },
-    // {
-    //     id: 5,
-    //     name: "DualSense Wireless Controller - Grass Green",
-    //     image: "/pictures/greenps5.png",
-    //     pics: ["/pictures/greenps5.png", "/pictures/greenps5.png", "/pictures/greenps5.png", "/pictures/greenps5.png"],
-    //     price: 74.99,
-    //     desc: "Illuminate your PS5 gaming space with the DualSense Starlight Blue wireless controller."
-    // },
     {
-        id: 6,
+        id: 5,
         name: "DualSense Wireless Controller - Starlight Blue",
         image: "/pictures/blueps5.png",
         pics: ["/pictures/blueps5.png", "/pictures/blue1.png", "/pictures/blue2.png", "/pictures/blue3.png"],
         price: 74.99,
         desc: "Illuminate your PS5 gaming space with the DualSense Starlight Blue wireless controller."
     },
-    // {
-    //     id: 7,
-    //     name: "DualSense Wireless Controller - Squid Game",
-    //     image: "/pictures/sg.png",
-    //     pics: ["/pictures/sg.png", "/pictures/sg.png", "/pictures/sg.png", "/pictures/sg.png"],
-    //     price: 99.99,
-    //     desc: "Illuminate your PS5 gaming space with the DualSense Starlight Blue wireless controller."
-    // }
+]
+
+export const games = [
+    {
+        id: "1",
+        name: "Horizon",
+        img: "/pictures/game1.png"
+    },
+    {
+        id: "2",
+        name: "Ghost",
+        img: "/pictures/game2.png"
+    },
+    {
+        id: "3",
+        name: "Spider-Man Miles Morales",
+        img: "/pictures/game3.png"
+    },
+    {
+        id: "4",
+        name: "Ratchet Clank",
+        img: "/pictures/game4.png"
+    },
+    {
+        id: "5",
+        name: "The show 22",
+        img: "/pictures/game5.png"
+    },
+    {
+        id: "6",
+        name: "Uncharted",
+        img: "/pictures/game6.png"
+    },
+    {
+        id: "7",
+        name: "Death stranding",
+        img: "/pictures/game7.png"
+    }
 ]

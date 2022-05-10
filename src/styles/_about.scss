@@ -1,0 +1,32 @@
+.about {
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    background-color: black;
+    @include flexColumn();
+    justify-content: center;
+    color: white;
+    padding: 20px 50px;
+    .header{
+        margin-bottom: 20px;
+        &.second{
+            margin-top: 50px;
+        }
+    }
+    .info{
+        line-height: 50px;
+    }
+    .webLink{
+        display: inline !important;
+        color: $blue;
+        line-height: 50px;
+    }
+    .socialsContainer{
+        .icon{
+            margin: 10px;
+            cursor: pointer;
+            &:hover{
+                color: $blue;
+            }
+        }
+    }
+}

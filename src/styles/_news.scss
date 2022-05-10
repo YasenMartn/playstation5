@@ -1,0 +1,43 @@
+.news {
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    background-color: black;
+    @include flexColumn();
+    justify-content: center;
+    color: white;
+    .header {
+        text-align: center;
+    }
+    .swiper {
+        width: 100%;
+        margin-top: 30px;
+        padding: 0 30px;
+        padding-bottom: 70px;
+        @include flexCenter();
+        .swiper-slide {
+            width: 300px;
+            @include flexColumn();
+            justify-content: flex-start;
+            .gameTitle {
+                font-size: 1.2rem;
+            }
+        }
+        .swiper-pagination-bullet {
+            color: #000;
+            opacity: 1;
+            background: $color;
+        }
+        .swiper-pagination-bullet-active {
+            color: #fff;
+            background: $blue;
+        }
+        .swiper-button-next{
+            position: absolute;
+            top: 150px;
+        }
+        .swiper-button-prev{
+            position: absolute;
+            top: 150px;
+        }
+    }
+}

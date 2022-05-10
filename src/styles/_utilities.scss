@@ -26,3 +26,9 @@ $red: #dc3545;
     align-items: center;
     justify-content: flex-end;
 }
+@mixin flexColumn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}

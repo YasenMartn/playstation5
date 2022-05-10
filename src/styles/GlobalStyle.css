@@ -410,8 +410,6 @@
 
 .shopContainer .title {
   color: white;
-  font-size: 4rem;
-  font-weight: 700;
   margin-bottom: 20px;
 }
 
@@ -1096,6 +1094,143 @@
   .cartProductContainer .productInfoContainer .btnsContainer .quantity {
     margin-bottom: 20px;
   }
+}
+
+.news {
+  width: 100%;
+  min-height: calc(100vh - 70px);
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+.news .header {
+  text-align: center;
+}
+
+.news .swiper {
+  width: 100%;
+  margin-top: 30px;
+  padding: 0 30px;
+  padding-bottom: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.news .swiper .swiper-slide {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-content: flex-start;
+}
+
+.news .swiper .swiper-slide .gameTitle {
+  font-size: 1.2rem;
+}
+
+.news .swiper .swiper-pagination-bullet {
+  color: #000;
+  opacity: 1;
+  background: #313131;
+}
+
+.news .swiper .swiper-pagination-bullet-active {
+  color: #fff;
+  background: #0d6efd;
+}
+
+.news .swiper .swiper-button-next {
+  position: absolute;
+  top: 150px;
+}
+
+.news .swiper .swiper-button-prev {
+  position: absolute;
+  top: 150px;
+}
+
+.about {
+  width: 100%;
+  min-height: calc(100vh - 70px);
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  padding: 20px 50px;
+}
+
+.about .header {
+  margin-bottom: 20px;
+}
+
+.about .header.second {
+  margin-top: 50px;
+}
+
+.about .info {
+  line-height: 50px;
+}
+
+.about .webLink {
+  display: inline !important;
+  color: #0d6efd;
+  line-height: 50px;
+}
+
+.about .socialsContainer .icon {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.about .socialsContainer .icon:hover {
+  color: #0d6efd;
 }
 
 * {
