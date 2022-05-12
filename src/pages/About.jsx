@@ -7,7 +7,7 @@ const About = () => {
         <h1 className="header">About Us</h1>
         <span className="info">
             Made by Yassin Laghzaouna. You can check more of my works or you can hire me at &nbsp;
-            <a href='https://yassinlaghzaouna.netlify.app/' target="_blank" className='webLink'>Yassin Laghzaouna</a>
+            <a href='https://yassinlaghzaouna.netlify.app/' target="_blank" rel="noreferrer" className='webLink'>Yassin Laghzaouna</a>
         </span>
         <span className="info">
             PS5 DualSense is a fan made website that sells wireless PS5 controllers.
